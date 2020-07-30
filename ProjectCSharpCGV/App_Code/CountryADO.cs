@@ -8,7 +8,7 @@ using System.Web;
 
 namespace ProjectCSharpCGV.App_Code
 {
-    public class CountryADO
+    public  class CountryADO
     {
         public static Country getCountrydByID(int id)
         {

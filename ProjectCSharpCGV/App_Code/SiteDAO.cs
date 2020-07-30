@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace ProjectCSharpCGV.App_Code
 {
-    public class SiteDAO
+    public  class SiteDAO
     {
         public static SqlConnection getConnection()
         {
@@ -46,11 +46,10 @@ namespace ProjectCSharpCGV.App_Code
             cmd.Connection.Close();
             return numberAccess != 0;
         }
-        public static DataTable getAllRegion()
+        public static DataTable getAllSite()
         {
             string sql = "SELECT id,name FROM dbo.Rap";
             return ReadDataBySQL(sql);
         }
-
     }
 }

@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-
 namespace ProjectCSharpCGV.App_Code
 {
-    public class RegionDAO
+    public  class RegionDAO
     {
         public static SqlConnection getConnection()
         {
@@ -52,6 +51,5 @@ namespace ProjectCSharpCGV.App_Code
             string sql = "SELECT * FROM dbo.KhuVuc";
             return ReadDataBySQL(sql);
         }
-
     }
 }
